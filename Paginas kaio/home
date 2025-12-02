@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" conteudo="width=device-width, initial-scale=1.0">
+  <title>ITER Viagens - Encontre sua Viagem Ideal</title>
+  <meta name="description" conteudo="Pacotes de viagem exclusivos para Bariloche, Maceió e Natal. Reserve agora com as melhores ofertas.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo ITER Viagens">
+    </div>
+    <nav id="nav-menu">
+      <a href="#ajuda" aria-label="Página de Ajuda"><i class="fas fa-question-circle"></i> Ajuda</a>
+      <a href="#cliente" aria-label="Área do Cliente"><i class="fas fa-user"></i> Área do Cliente</a>
+      <a href="#login" aria-label="Página de Login"><i class="fas fa-sign-in-alt"></i> Login</a>
+    </nav>
+    <div class="menu" onclick="perguntaMenu()" aria-label="Abrir menu mobile"><i class="fas fa-bars"></i></div>
+  </header>
+
+  <section class="hero">
+    <div class="slideshow">
+      <div class="slide s1" role="img" aria-label="Praia tropical"></div>
+      <div class="slide s2" role="img" aria-label="Montanhas"></div>
+      <div class="slide s3" role="img" aria-label="Cidade de Paris"></div>
+    </div>
+    <div class="hero-conteudo">
+      <h1>Descubra sua Próxima Aventura</h1>
+      <p>Explore destinos incríveis com pacotes exclusivos e preços imbatíveis.</p>
+      <div class="search-box" role="search">
+        <input type="text" placeholder="Origem" aria-label="Digite a origem da viagem">
+        <input type="text" placeholder="Destino" aria-label="Digite o destino da viagem">
+        <input type="date" aria-label="Selecione a data de ida">
+        <input type="date" aria-label="Selecione a data de volta">
+        <select aria-label="Selecione o número de viajantes">
+          <option>1 Viajante</option>
+          <option>2 Viajantes</option>
+          <option>3 Viajantes</option>
+          <option>4+ Viajantes</option>
+        </select>
+        <select aria-label="Selecione o tema da viagem">
+          <option>Praia</option>
+          <option>Montanha</option>
+          <option>Cidade</option>
+          <option>Aventura</option>
+        </select>
+        <button aria-label="Buscar pacotes de viagem"><i class="fas fa-search"></i> Buscar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="offers">
+    <h2>Ofertas Exclusivas</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-img">
+          <span class="tag">7 DIAS / 6 NOITES</span>
+          <img src="bariloche-cold-1-1360515.jpg" alt="Vista de Bariloche com neve" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Pacotes para Bariloche</h3>
+          <div class="nota">
+            <span class="score">7.8</span>
+            <span class="stars" aria-label="Avaliação 4 estrelas">⭐⭐⭐⭐</span>
+          </div>
+          <p class="origem">Saindo de São Paulo</p>
+          <p class="beneficio">Hotel 4★ + Aéreo + Café da Manhã</p>
+          <button class="atencao-btn" aria-label="Ver oferta para Bariloche">Oferta Limitada</button>
+          <div class="price-box">
+            <span class="preco-antigo">R$ 3.000</span>
+            <span class="preco-novo">R$ 2.341</span>
+            <span class="taxa">Taxas não inclusas</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <span class="tag">7 DIAS / 6 NOITES</span>
+          <img src="maceio.jpg" alt="Praia de Maceió" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Pacotes para Maceió</h3>
+          <div class="nota">
+            <span class="score">7.1</span>
+            <span class="stars" aria-label="Avaliação 4 estrelas">⭐⭐⭐⭐</span>
+          </div>
+          <p class="origem">Saindo do Rio de Janeiro</p>
+          <p class="beneficio">Hotel 5★ + Aéreo + Traslados</p>
+          <button class="atencao-btn" aria-label="Ver oferta para Maceió">Oferta Limitada</button>
+          <div class="price-box">
+            <span class="preco-antigo">R$ 1.426</span>
+            <span class="preco-novo">R$ 1.097</span>
+            <span class="taxa">Taxas não inclusas</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <span class="tag">7 DIAS / 6 NOITES</span>
+          <img src="natal.jpg" alt="Praia de Natal" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h3>Pacotes para Natal</h3>
+          <div class="nota">
+            <span class="score">7.7</span>
+            <span class="stars" aria-label="Avaliação 4 estrelas">⭐⭐⭐⭐</span>
+          </div>
+          <p class="origem">Saindo do Rio de Janeiro</p>
+          <p class="beneficio">Hotel 4★ + Aéreo + Excursões</p>
+          <button class="atencao-btn" aria-label="Ver oferta para Natal">Oferta Limitada</button>
+          <div class="price-box">
+            <span class="preco-antigo">R$ 1.340</span>
+            <span class="preco-novo">R$ 1.132</span>
+            <span class="taxa">Taxas não inclusas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Galeria de Destinos</h2>
+    <div class="slideshow-gallery">
+      <div class="slide-gallery g1"></div>
+      <div class="slide-gallery g2"></div>
+      <div class="slide-gallery g3"></div>
+      <div class="slide-gallery g4"></div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Dúvidas Frequentes</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq1">
+          <span>Como reservar um pacote?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-conteudo" id="faq1">
+          <p>Use o formulário de busca acima ou entre em contato conosco. Pagamento seguro e confirmação imediata.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq2">
+          <span>Quais formas de pagamento?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-conteudo" id="faq2">
+          <p>Aceitamos cartão de crédito, débito, PIX, boleto e parcelamento em até 12x.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq3">
+          <span>Posso cancelar a viagem?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-conteudo" id="faq3">
+          <p>Sim, consulte nossa política de cancelamento. Reembolso parcial disponível até 48h antes.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta" aria-expanded="false" aria-controls="faq4">
+          <span>O que inclui no pacote?</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-conteudo" id="faq4">
+          <p>Aéreo, hospedagem, traslados e benefícios extras, conforme descrito em cada oferta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-conteudo">
+      <div class="footer-section">
+        <div class="logo">
+          <img src="logo.png" alt="Logo ITER Viagens">
+        </div>
+        <p>ITER Viagens - Sua aventura começa aqui. Pacotes exclusivos para o mundo todo.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links Úteis</h3>
+        <nav>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#privacidade">Política de Privacidade</a>
+          <a href="#termos">Termos de Uso</a>
+          <a href="#suporte">Suporte</a>
+        </nav>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p><i class="fas fa-phone"></i> (19) 98604-8983</p>
+        <p><i class="fas fa-envelope"></i> Viagensiter@gmail.com </p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ITER Viagens.</p>
+    </div>
+  </footer>
+
+  <script>
+
+
+    document.addEventListener('DOMconteudoLoaded', function() {
+      const perguntas = document.querySelectorAll('.faq-pergunta');
+      
+      perguntas.forEach(pergunta => {
+        pergunta.addEventListener('click', function() {
+          const conteudo = this.nextElementSibling;
+          const isExpanded = this.getAttribute('aria-expanded') === 'true';
+          
+          perguntas.forEach(otherpergunta => {
+            if (otherpergunta !== this) {
+              otherpergunta.setAttribute('aria-expanded', 'false');
+              otherpergunta.nextElementSibling.style.maxHeight = '0';
+              otherpergunta.nextElementSibling.style.padding = '0 25px';
+            }
+          });
+          
+          this.setAttribute('aria-expanded', !isExpanded);
+          if (!isExpanded) {
+            conteudo.style.maxHeight = conteudo.scrollHeight + 'px';
+            conteudo.style.padding = '0 25px 20px';
+          } else {
+            conteudo.style.maxHeight = '0';
+            conteudo.style.padding = '0 25px';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
